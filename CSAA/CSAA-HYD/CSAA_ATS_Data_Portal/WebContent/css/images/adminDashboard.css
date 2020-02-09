@@ -1,0 +1,200 @@
+body
+{
+	background:white !important;
+}
+
+.page-heading h1
+{
+	line-height:25px;
+	margin-left:0px;
+}
+.chk-label-style
+{
+    padding-left: 13px;
+    text-indent: -15px;
+    margin-bottom:0px;
+    font-weight:normal;
+    margin-right:10px;
+}
+
+.chk-control
+{
+    width: 13px;
+    height: 13px;
+    padding: 0px;
+    margin-top:0px !important;
+    vertical-align: middle;
+    position: relative;
+    margin-right:3px !important;
+    line-height:inherit !important;
+}
+
+.customDataTable tbody td
+{
+	text-align: left;
+    padding: 0px 8px !important;
+    /* border: 2px solid white; */
+    border: .1px solid #ccc;
+	border-right:0;
+	border-bottom:0;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 24px;
+	cursor:pointer;
+}
+
+.toolbar-btn-style
+{
+    margin:5px;
+    float:right;
+    display:inline-block;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: rgb(113,178,201);
+    color: white;
+    font-weight:bold;
+    margin-top: 0px;
+}
+
+.child-row-style
+{
+    text-align:left;
+}
+
+.table-cell-input
+{
+    border:.5px solid rgb(204,204,204);
+    padding-left:2px;
+    font-size:13px;
+    text-overflow:ellipsis;
+    background-color: transparent;
+}
+
+.hide-class
+{
+    display:none !important;
+}
+
+.customDataTable thead th
+{
+	background-color: #eee;
+    /* font-weight: bold; */
+    color: grey;
+    padding-left: 8px !important;
+    border-top: 1px solid #ccc !important;
+	border-left: 1px solid #ccc !important;
+	border-right:0 !important;
+	border-bottom:0 !important;
+    font-size: 14px;
+	font-weight: normal !important;
+	text-align: left;
+	padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-right: 2px !important;
+	height: 42px;
+}
+
+.customDataTable thead th:last-child
+{
+	border-right: 1px solid #ccc !important;
+}
+
+.customDataTable tbody td:last-child
+{
+	border-right: 1px solid #ccc !important;
+}
+
+table.dataTable.no-footer {
+    border-bottom: none !important;
+}
+.even
+{
+    background-color:rgb(242,242,242) !important;
+}
+
+.fa-check-square-o
+{
+    color:#6990cb
+}
+
+.dataTables_empty
+{
+	width:100%;
+}
+
+.empty-row
+{
+	font-size: 15px;
+    color: rgb(140,142,143);
+    line-height: 32px;
+}
+.dataTables_length
+{
+	padding-top: 0.300em;
+}
+
+.dataTables_length label
+{
+	display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: normal;
+    margin-left: 12px;
+}
+
+.customDataTable tbody tr:last-child td {
+    border-bottom: 1px solid #ccc !important;
+}
+
+.customDataTable img
+{
+	height: 20px;
+}
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button 
+{
+	padding:0px !important;
+	margin-left:5px !important;
+	margin-right:5px !important;
+}
+
+.dataTables_wrapper .dataTables_info {
+    padding-top: 0.400em !important;
+}
+
+.tab-content {
+	background-color:rgb(242,242,242);
+	padding-top:6px;
+}
+
+.dataTables_filter label
+{
+	font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 3px;
+	padding-left:11px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover
+{
+	background:rgb(113,178,201) !important;
+	border:1px solid rgb(113,178,201) !important;
+}
+
+.highlight
+{
+	background-color:rgb(230,232,232) !important;
+}
+footer .nav-links ul		
+{		
+	padding-left: 40px;		
+}
+.request-header
+{
+	background-color:transparent;
+	padding-top:1px;
+}

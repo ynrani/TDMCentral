@@ -1,0 +1,10 @@
+var topNav='';
+topNav+=' <section>';
+topNav+='<nav class="mainTabCtrl clearfix">';
+topNav+='	<ul>';
+topNav+='		<li id="Policy_Property_Search"><a href=""./policyProp">Policy Center</a><span>Policy Center</span></li>';
+topNav+='		<li id="Policy_Auto_Search"><a href="#">Claim Center</a><span>Claim Center</span></li>';
+topNav+='	</ul>';
+topNav+='</nav>';
+topNav+='   </section>';
+document.write(topNav);

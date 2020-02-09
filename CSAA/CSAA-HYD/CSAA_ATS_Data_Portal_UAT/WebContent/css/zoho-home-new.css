@@ -1,0 +1,1060 @@
+/* RESET CSS PART */
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, em, img, ol,
+	ul, li, fieldset, form, label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent
+}
+
+ol, ul {
+	list-style: none
+}
+
+a {
+	border: none;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* COADING PART STARTS */
+body { #
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-family: "Roboto Condensed";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+.signing .all-apps {
+	padding-left: 11px;
+}
+
+.signing .all-apps span {
+	background: url("../images/Logo_LoginPage1.png") no-repeat -262px -117px;
+	height: 10px;
+	left: 0;
+	position: absolute;
+	top: 3px;
+	width: 15px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	body {
+		text-rendering: optimizeSpeed;
+	}
+}
+
+.logo span, .scroll-down span, .ci1, .ci2, .ci3, .ci4, .ci5, .ci6,
+	.watch-video span, .store-icon span, .timeline-holder span,
+	.zoholics-icon, .si1, .si2, .si3, .footer-logo a, .popup-close span,
+	.zoholics-links span, .video-player .icon-close, .watch-story span,
+	.logo a, .iconic-menu .logo a, .socl-signup div span {
+	background-image: url("../images/Logo_LoginPage111111.png");
+	height: 400px;
+	width: 300px;
+	background-repeat: no-repeat;
+	text-indent: -999em;
+	display: inline-block
+}
+
+.logo1 span, .scroll-down span, .ci1, .ci2, .ci3, .ci4, .ci5, .ci6,
+	.watch-video span, .store-icon span, .timeline-holder span,
+	.zoholics-icon, .si1, .si2, .si3, .footer-logo a, .popup-close span,
+	.zoholics-links span, .video-player .icon-close, .watch-story span,
+	.logo a, .iconic-menu .logo a, .socl-signup div span {
+	background-image: url("../images/Logo_LoginPage1.png");
+	height: 400px;
+	width: 300px;
+	background-repeat: no-repeat;
+	text-indent: -999em;
+	display: inline-block
+}
+
+p {
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #666;
+	text-align: bottom;
+}
+
+.white-bg {
+	background: #fff
+}
+
+.new, .upcoming, .beta {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-repeat: no-repeat;
+	background-position: -350px -148px;
+	height: 13px;
+	width: 30px;
+	color: #666;
+	font-size: 9px;
+	font-style: normal;
+	text-indent: -999px;
+}
+
+.upcoming {
+	background-position: -320px -131px;
+	width: 60px;
+}
+
+.beta {
+	background-position: right -115px;
+	width: 30px;
+}
+
+.logo span, .footer-logo a, .domain-bundle li span, .si1, .si2, .si3,
+	.video-player .icon-close {
+	background-image: url('../images/zohohome-sprite-new@2x.png');
+	background-size: 407px 225px;
+}
+
+}
+/* MAIN SECTION CSS START */
+.main-section {
+	overflow: hidden;
+	background: #fff;
+}
+
+.loggedin-sec.signup-section .signup-box, .loggedin-main .signing .signup
+	{
+	display: none;
+}
+
+.loggedin-sec.signup-section .loggedin-userinfo {
+	display: block;
+}
+
+.loggedin-sec.signup-section .testi-video .video-caption {
+	opacity: 1;
+}
+/* LOGGED IN USERS DETAILS */
+.loggedin-userinfo {
+	margin: -120px auto 0;
+	max-width: 350px;
+	min-height: 150px;
+	position: relative;
+	top: 50%;
+	z-index: 88;
+	padding: 0 40px;
+}
+
+.loggedin-userinfo h2 {
+	color: #000;
+	font-size: 34px;
+	font-weight: 400;
+	letter-spacing: -1.25px;
+	line-height: 42px;
+	padding: 0 0 25px;
+}
+
+.loggedin-userinfo h2 span {
+	display: block;
+}
+
+.loggedin-userinfo a {
+	border: 1px solid #000;
+	color: #000;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	height: 46px;
+	line-height: 44px;
+	padding: 0 50px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.7s ease;
+	-webkit-transition: 0.7s ease;
+}
+
+.loggedin-userinfo a:hover {
+	padding: 0 55px;
+}
+/*SIGNUP SECTION CSS START */
+.signup-section {
+	background-color: #000;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: right;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	max-width: 375px;
+	opacity: 0;
+	transition: .9s ease opacity;
+	-webkit-transition: .9s ease opacity;
+}
+
+.signup-section::after {
+	background: #fff none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.signup-button-part {
+	display: none;
+	text-align: center;
+}
+
+.signup-button-part p {
+	color: #000;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 40px;
+	margin: 0 0 25px;
+	text-align: center;
+}
+/*SIGNUP SECTION CSS ENDS */
+.main-content {
+	width: auto;
+	margin-right: 375px;
+}
+/* MAIN SECTION CSS ENDS */
+
+/* HEADER BG ANIMATION STARTS */
+.signing {
+	color: #ffffff;
+	font-size: 11px;
+	padding: 0 10px;
+	position: fixed;
+	right: 0;
+	top: 15px;
+	z-index: 99;
+}
+
+.signing a {
+	color: #000;
+	display: inline;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 15px 10px;
+	text-transform: none;
+}
+
+.header {
+	padding: 80px 0;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	background: #fff;
+	background-image: url("../images/login/Image001.png");
+	background-repeat: no-repeat;
+	height:667px;
+	width:100%;
+}
+
+.banner-content {
+	z-index: 9;
+	position: relative;
+}
+
+.home-bg-fading {
+	position: absolute;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity .7s ease;
+	-moz-transition: opacity .7s ease;
+	-webkit-transition: opacity .7s ease;
+	-o-transition: opacity .7s ease;
+	-ms-transition: opacity .7s ease;
+}
+
+.home-bg-fading img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.logo {
+	margin-bottom: 40px;
+}
+
+.logo span {
+	background-position: left top;
+	width: 400px;
+	height: 200px
+}
+
+.logo1 span {
+	background-position: left top;
+	width: 300px;
+	height: 125px
+}
+
+.logo a {
+	background-position: left -64px;
+	display: block;
+	height: 32px;
+	width: 90px;
+}
+
+h1 {
+	color: #000; #
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-family: "Roboto Condensed";
+	font-size: 52px;
+	font-weight: 600;
+	letter-spacing: -1.5px;
+	line-height: 1.25;
+	padding: 0 0 5px;
+}
+
+.header .description {
+	color: #333; #
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-family: "Roboto Condensed";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.6;
+	margin: 0 auto;
+	max-width: 900px;
+	padding: 5px 5% 60px;
+	position: relative;
+	text-shadow: none;
+}
+
+.header .description::after {
+	background: #00add5 none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 2px;
+	left: 50%;
+	margin-left: -45px;
+	position: absolute;
+	width: 90px;
+}
+
+.header .description span {
+	display: block;
+}
+
+.scroll-down {
+	display: none;
+	height: 22px;
+	margin: 45px auto 0;
+	opacity: 0.3;
+	width: 44px
+}
+
+.scroll-down:hover {
+	opacity: .75
+}
+
+.scroll-down span {
+	display: block;
+	font-weight: 400;
+	margin-top: 22px;
+	background-position: left -112px;
+	width: 44px;
+	height: 22px;
+	cursor: pointer
+}
+
+.scrolldown-arrow {
+	top: 0px;
+	position: relative
+}
+
+.scrolldown-arrow2 {
+	top: -35px;
+	animation: 1.25s ease scrolldown-arrow2
+}
+/* HEADER PARTS ENDS */
+
+/* FEATURED APP ICON CSS  */
+.featured-app span {
+	height: 60px !important;
+	width: 64px !important;
+}
+
+.featured-app .pi1 {
+	background-position: left -205px;
+	margin-bottom: 5px;
+}
+
+.featured-app .pi9 {
+	background-position: -72px -208px;
+	margin-bottom: 5px;
+}
+
+.featured-app .pi16 {
+	background-position: -134px -205px;
+	margin-bottom: 5px;
+}
+
+.featured-app .pi20 {
+	background-position: -195px -205px;
+	margin-bottom: 5px;
+}
+
+.featured-app .pi7 {
+	background-position: -265px -208px;
+	margin-bottom: 5px;
+}
+
+.featured-app .pi18 {
+	background-position: -326px -205px;
+	margin-bottom: 5px;
+}
+
+.three-product a {
+	width: 50%
+}
+
+/* FLIP SLIDER START */
+.zoho-benifits {
+	margin-bottom: 20px
+}
+
+.flip-part {
+	width: 520px;
+	height: 120px;
+	overflow: hidden;
+	background: #f9f9f9;
+	position: relative;
+	margin: 0 auto
+}
+
+/* SIGNUP PART CSS STARTS */
+.signup-box {
+	margin: -269px auto 0;
+	max-width: 300px;
+	position: relative;
+	top: 50%;
+	width: 100%;
+	z-index: 888;
+}
+
+.signup-heading {
+	color: #000;
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: -0.3px;
+	line-height: 32px;
+	margin: 0 0 5px;
+	text-align: left;
+}
+
+.signup-heading span {
+	display: block;
+	font-size: 14px;
+	letter-spacing: 0;
+	line-height: 20px;
+	padding: 5px 0 12px;
+	color: #ccc;
+	max-width: 250px;
+}
+/* SIGNUP FORM CSS STARTS */
+.end_pop, .confirm_pop {
+	margin: 20px auto 0;
+	overflow: hidden;
+	padding: 0 10px 50px;
+	position: relative;
+	width: 840px;
+}
+
+.endpopsb {
+	border-bottom: 2px solid #000;
+	padding-bottom: 25px;
+}
+
+.thank_tit {
+	color: #333333;
+	font-size: 24px;
+	font-weight: 800;
+	letter-spacing: -0.5px;
+	line-height: 56px;
+	margin: 0 0 20px;
+	max-width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#new_zohosignup {
+	
+}
+
+.sub_inftxt {
+	color: #888888;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.sub_inftxt span {
+	color: #333;
+}
+
+.signup_frm, .thank_titmn {
+	margin: 30px auto 0;
+	min-height: 90px;
+}
+
+.signup_frm {
+	background: none repeat scroll 0 0 transparent;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.sgnusrname, .sgnpaswrd, .sgnemail, .zs-txtfldnew, .captchaCnt {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
+	border: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	color: #000;
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 5px 10px 5px 0;
+	width: 100%;
+	transition: 0.7s ease;
+	-webkit-transition: 0.7s ease;
+	-webkit-appearance: none;
+	appearance: none;
+	-moz-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	outline: medium none;
+	-webkit-font-smoothing: auto;
+	-moz-osx-font-smoothing: auto;
+	border-bottom: 1px solid #000;
+	z-index: 9;
+	position: relative;
+}
+
+.za-email-container.sgfrm {
+	margin-bottom: 10px;
+}
+
+.sgnusrname:focus, .sgnpaswrd:focus, .sgnemail:focus, .zs-txtfldnew:focus
+	{
+	border-bottom: 1px solid #000;
+}
+
+.focusin {
+	border: 1px solid #000;
+}
+/* LIGHT THEME CSS STARTS */
+.light-theme.loggedin-sec h2 {
+	color: #000;
+}
+
+.light-theme.loggedin-sec .loggedin-userinfo a {
+	color: #000;
+	border: 1px solid #000;
+}
+
+.light-theme.signup-section::after {
+	background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+}
+
+.signup-section.light-theme .sgnusrname, .signup-section.light-theme .sgnpaswrd,
+	.signup-section.light-theme .sgnemail, .signup-section.light-theme .zs-txtfldnew,
+	.signup-section.light-theme .captchaCnt {
+	border-bottom: 1px solid #444;
+	color: #444;
+}
+
+.signup-section.light-theme .sgnusrname:focus, .signup-section.light-theme .sgnpaswrd:focus,
+	.signup-section.light-theme .sgnemail:focus, .signup-section.light-theme .zs-txtfldnew:focus,
+	.signup-section.light-theme .captchaCnt:focus {
+	border-bottom: 1px solid #444;
+}
+
+.signup-section.light-theme .signup-heading {
+	color: #444;
+}
+
+.signup-section.light-theme .signup-heading span, .signup-section.light-theme .pwderror
+	{
+	color: #444;
+}
+
+.signup-section.light-theme .sign_agree, .signup-section.light-theme .socl-signup p
+	{
+	color: #444;
+}
+
+.signup-section.light-theme .sign_agree:hover, .signup-section.light-theme .testi-video p,
+	.light-theme.signing a {
+	color: #444;
+}
+/* LIGHT THEME CSS ENDS */
+
+/* DARK THEME CSS STARTS */
+.signup-section.dark-theme .signup-heading {
+	color: #444;
+}
+
+.signup-section.dark-theme .sign_agree {
+	color: #444;
+}
+
+.signup-section.dark-theme .sign_agree:hover, .signup-section.dark-theme .testi-video p
+	{
+	color: #444;
+}
+/* DARK THEME CSS ENDS */
+input:focus, input:active {
+	outline: none;
+}
+
+.za-captcha-container {
+	clear: both;
+	display: none;
+	padding: 10px 0;
+	text-align: left;
+}
+
+.zs-txtfldnew {
+	display: inline-block;
+	padding: 10px 15px;
+	width: 100%;
+	border: 1px solid #01A9DB;
+	margin-bottom: 10px;
+}
+
+.sgnbtnmn {
+	clear: both;
+	margin-top: 7px;
+	overflow: hidden;
+}
+
+.sgnbtn {
+	clear: both;
+	float: none;
+	height: 46px;
+	padding-left: 0;
+}
+
+.sgnbtn input, .signup-button-part a {
+	background-color: #01A9DB;
+	border: 1px solid #01A9DB;
+	-webkit-appearance: none;
+	appearance: none;
+	-moz-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	height: 46px;
+	padding: 5px 0;
+	position: relative;
+	width: 100%;
+	z-index: 99;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.signup-button-part a {
+	display: block;
+	height: 46px;
+	line-height: 42px;
+	margin: 0 auto;
+	max-width: 210px;
+	padding: 0;
+	text-align: center;
+}
+
+.signbtm-msg {
+	border-top: 1px solid #d9d9d9;
+	font-size: 14px;
+	margin: 20px 20px 20px 0px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.snews-letter {
+	color: #444444;
+	font-size: 12px;
+	height: 0;
+	margin: 0;
+	opacity: 0;
+	padding-left: 0;
+	visibility: hidden;
+}
+
+.sign_agree {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 16px;
+	margin-top: 0;
+	padding-bottom: 10px;
+	text-align: left;
+	width: 100%;
+}
+
+.sign_agree a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.sign_agree:hover {
+	color: #fff;
+}
+
+.sgfrm .field {
+	color: #000;
+	font-size: 13px;
+	font-weight: 600;
+	left: 0;
+	position: absolute;
+	text-transform: uppercase;
+	top: 10px;
+}
+
+.signup_error, .jqval-error, .error {
+	color: #f0483e;
+	float: left;
+	font-size: 12px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+.field-msg {
+	bottom: 0;
+	clear: both;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.field-msg .jqval-error {
+	display: none !important;
+}
+
+.field-msg .jqval-error a {
+	color: #00add5;
+	text-decoration: underline;
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.za-captcha-container .error.jqval-error {
+	display: block !important;
+	width: 100%;
+}
+
+.show-password {
+	display: none !important;
+}
+
+.portalName {
+	text-align: left;
+}
+
+.field-error .error {
+	display: inline-block !important;
+}
+
+.password-strength {
+	text-align: left;
+	clear: both;
+}
+
+.password-strength div {
+	color: #FE0000;
+	display: none !important;
+	margin: 0;
+	overflow: hidden;
+	padding-top: 5px;
+}
+
+.pwderror, .dummyerror {
+	bottom: 5px;
+	color: #ccc;
+	display: none;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 18px;
+	position: absolute;
+	right: 0; //
+	display: none !important;
+}
+
+.placeholder {
+	color: #000;
+	font-size: 14px;
+	font-weight: 400;
+	left: 0;
+	position: absolute;
+	top: 20px;
+	transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	z-index: 7;
+}
+
+.added-placeholder .placeholder {
+	top: 0;
+	font-size: 12px;
+}
+
+.light-theme .placeholder {
+	color: #000;
+}
+
+.pwdparent {
+	margin: 0 !important;
+}
+/* SIGNIN USING SOCIAL MEDIAS CSS STARTS */
+.idpform {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 0 0 25px 0;
+	width: 100%;
+}
+
+.idpform .sub-domain {
+	color: #ccc;
+	display: inline-block;
+	font-size: 14px;
+	left: 7px;
+	margin-right: 0;
+	opacity: 0;
+	position: absolute;
+	top: 25px;
+}
+
+.idpform[novalidate="true"] .sub-domain {
+	opacity: 1;
+}
+
+.idpform .error {
+	bottom: 0;
+	color: #f0483e;
+	display: block;
+	float: none;
+	font-size: 14px;
+	margin-bottom: 0;
+	padding: 0 0 0 10px;
+	position: absolute;
+	text-align: left;
+}
+
+.small-input {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-sizing: border-box;
+	color: #fff;
+	display: inline-block;
+	float: left;
+	font-size: 13px;
+	line-height: 18px;
+	margin-top: 15px;
+	padding: 10px 10px 10px 45px;
+	width: 78%;
+	-webkit-appearance: none;
+	appearance: none;
+	-moz-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	outline: medium none;
+}
+
+.signupbtn.openidbtn {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background-color: #00add5;
+	border: medium none;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	font-weight: 400;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 15px;
+	padding: 0;
+	position: relative;
+	text-transform: uppercase;
+	width: 21.5%;
+	z-index: 99;
+	-webkit-appearance: none;
+	appearance: none;
+	-moz-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	outline: medium none;
+}
+
+.sgfrm {
+	box-sizing: border-box;
+	overflow: auto;
+	padding: 20px 0;
+	position: relative;
+	width: 100%;
+}
+/* SIGNUP FORM CSS ENDS */
+
+/* SIGNUP PART CSS ENDS */
+
+/*  FOOTER PART */
+.footer {
+	background: #333 none repeat scroll 0 0;
+	width: 100%;
+	position: relative;
+}
+
+.footer-links {
+	border-bottom: 1px solid #444;
+	margin: 0 auto 5px;
+	max-width: 960px;
+	overflow: hidden;
+	padding: 60px 0 40px
+}
+
+.footer-links ul {
+	float: left;
+	overflow: hidden;
+	width: 29%
+}
+
+.footer-links ul:nth-child(3), .footer-links ul:nth-child(4) {
+	float: left;
+	overflow: hidden;
+	width: 21%
+}
+
+.footer-links li {
+	color: #aaa;
+	font-weight: 600;
+	padding: 5px 0;
+	line-height: 14px;
+	font-size: 14px
+}
+
+.footer-links li:first-child {
+	padding: 0 0 12px 0;
+	text-transform: uppercase
+}
+
+.footer-links li a {
+	color: #999;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 16px
+}
+
+.common-footer {
+	margin: 0 auto;
+	padding: 40px 0 45px;
+	text-align: center
+}
+
+.common-footer p {
+	color: #333;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	margin: 5px auto 5px
+}
+
+.common-footer ul {
+	margin: 0 auto 15px;
+	max-width: 690px;
+	overflow: hidden;
+	padding: 0 3%
+}
+
+.common-footer li {
+	border-left: 1px solid #444;
+	display: inline-block;
+	float: left;
+	line-height: 0;
+	overflow: hidden;
+	padding: 0px 12px
+}
+
+.common-footer li:first-child {
+	border-left: none
+}
+
+.common-footer li a {
+	color: #999;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14px
+}
+
+.social-icons {
+	margin: 5px auto 0;
+	overflow: hidden;
+	text-align: center
+}
+
+.si1, .si2, .si3 {
+	width: 17px;
+	height: 15px
+}
+
+.si1 {
+	background-position: left -172px;
+}
+
+.si2 {
+	background-position: -23px -172px;
+}
+
+.si3 {
+	background-position: -53px -172px;
+}
+
+.social-icons a {
+	line-height: 0;
+	margin: 0 5px;
+	text-align: center
+}
+
+.footer-logo a {
+	font-family: "Roboto Condensed";
+	background-position: left -204px;
+	text-align: bottom;
+	position: relative;
+	background: #fff;
+	background-image: url("../images/AAA.png");
+	height: 45px;
+	margin: 15px 0 10px;
+	width: 68px;
+}
+/* FOOTER PART ENDS */
+.logo-align
+{
+	margin-left: -8px;	
+}

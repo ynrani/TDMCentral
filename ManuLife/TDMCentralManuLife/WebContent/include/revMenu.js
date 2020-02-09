@@ -1,0 +1,10 @@
+var topNav='';
+topNav+='<nav class="mainTabCtrl clearfix">';
+topNav+='	<ul>';
+topNav+='		<li id="Poly_Prop_Rev"><a href="./myReservationProp"><spring:message code="label.rsvpolicyproperty"/></a><span><spring:message code="label.rsvpolicyproperty"/></span></li>';
+topNav+='		<li id="Poly_Auto_Rev"><a href="./myReservationAuto"><spring:message code="label.rsvautoresrve"/></a><span><spring:message code="label.rsvautoresrve"/></span></li>';
+topNav+='		<li id="PolicySearch_Rev"><a href="./myReservationPolicy"><spring:message code="label.rsvpolicyreserve"/></a><span><spring:message code="label.rsvpolicyreserve"/> </span></li>';
+topNav+='		<li id="ClaimSearch_Rev"><a href="./myReservationClaimSearch"><spring:message code="label.rsvclaminreserve"/></a><span><spring:message code="label.rsvclaminreserve"/></span></li>';
+topNav+='	</ul>';
+topNav+='</nav>';
+document.write(topNav);

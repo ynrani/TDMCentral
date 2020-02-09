@@ -1,0 +1,771 @@
+#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a, #cssmenu #menu-button
+{
+    background-color: transparent;
+    box-shadow:none;
+}
+
+.nav-tabs {
+    -webkit-transition: color .2s ease;
+    -moz-transition: color .2s ease;
+    -ms-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease;
+}
+
+.collpasewidget .widget-title {
+    margin: 0;
+    font-size: 22px;
+    width:100%;
+    background-color:white;
+    padding: 2px;
+    cursor: auto;
+    font-size:15px;
+    font-weight:700;
+    color:rgb(0,157,217);
+}
+.collpasewidget .widget-content {
+    padding:2px;
+    background-color:white;
+}
+.collpasewidget.active .widget-title, .collpasewidget.active ul {
+    color:rgb(0,157,217);
+    margin-top: 4px;
+}
+.right-align
+{
+    float:right;
+    display:inline;
+    margin-top: 5px;
+    border-width: 6px;
+}
+
+.caret-reversed
+{
+    transform: rotate(180deg);
+}
+
+.form-control,.down-control
+{
+    width: 90%;
+    height: 24px;
+    padding-top:3px;
+    padding-bottom:3px;
+    font-size:13px;
+    border-radius:3%;
+	font-family: inherit;
+}
+.table-parent
+{
+    border: 1px solid #e5e5e5;
+    margin: 7px 12px;
+    padding: 7px 0px;
+}
+
+.details-table
+{
+    margin-left: 30px;
+    border: 0;
+    font-size: 13px;
+}
+.prod-table .radio,.details-table .radio
+{
+    margin:0px 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.full-length-input
+{
+    width:97.3%;
+}
+
+.other-details
+{
+    background-color:white;
+}
+
+.field-style
+{
+    border:.5px solid rgb(228, 228, 228);
+    background-color:white;
+}
+.legend-style
+{
+    padding:3px;
+    width:auto;
+    font-size:13px;
+    margin-bottom:0px;
+    color:rgb(0,157,217);
+    background-color:white;
+}
+
+.chk-label-style
+{
+    padding-left: 13px;
+    text-indent: -15px;
+    margin-bottom:0px;
+    font-weight:normal;
+    margin-right:10px;
+}
+
+.chk-control
+{
+    width: 13px;
+    height: 13px;
+    padding: 0px;
+    margin-top:0px !important;
+    vertical-align: middle;
+    position: relative;
+    margin-right:3px !important;
+    line-height:inherit !important;
+}
+
+.separator
+{
+    margin-right:5px;
+    margin-left:5px;
+}
+
+.ui-widget-overlay {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:#666666;
+    opacity: .5;
+    filter: Alpha(Opacity=50);
+}
+
+.ui-front {
+    z-index: 100;
+}
+
+.noclose .ui-dialog-titlebar-close
+{
+    display:none;
+}
+
+.customDataTable tbody td
+{
+	text-align: left;
+    padding: 0px 8px !important;
+    border: .1px solid #ccc;
+	border-right:0;
+	border-bottom:0;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 24px;
+}
+
+.leftButton
+{
+    height: 20px;
+    width: 70px;
+	position:relative;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    bottom: 0px;
+	margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 0px;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    max-height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-width:100%;
+    overflow: hidden;
+}
+
+.ui-dialog-title
+{
+    color:#3db2e1;
+    padding:4px;
+}
+
+.toolbar-btn-style
+{
+    margin:5px;
+    float:right;
+    display:inline-block;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: rgb(113,178,201);
+    color: white;
+    font-weight:bold;
+    margin-top: 0px;
+}
+
+.btn-container
+{
+    text-align:right;
+    background-color:white;
+    margin: 14px 0px;
+}
+
+.result-btn-container
+{
+    text-align:right;
+    background-color:white;
+    margin: 14px 0px;
+}
+
+.ui-dialog-buttonset
+{
+    text-align:right;
+}
+
+.fetch-details {
+    font-size: 0.8em !important;
+    float:right;
+    margin-top: 4px;
+    margin-right: 20px;
+}
+
+.details-control
+{
+    color:#3db2e1;
+    cursor:pointer;
+    font-size:1em;
+    padding-right:5px;
+    display:inline;
+}
+.child-row-style
+{
+    text-align:left;
+}
+
+.table-cell-input
+{
+    border:.5px solid rgb(204,204,204);
+    padding-left:2px;
+    font-size:13px;
+    text-overflow:ellipsis;
+    background-color: transparent;
+}
+
+.hide-class
+{
+    display:none !important;
+}
+
+#autoPolicyContent
+{
+    border:.5px solid rgb(110,199,233);
+}
+
+.auto-title-style
+{
+    background-color:rgb(237,123,115);
+    color:white;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    width:10%;
+    padding:4px;
+    display:inline-block;
+}
+#propertyPolicyContent
+{
+    border:.5px solid rgb(110,199,233);
+}
+.prop-title-style
+{
+    background-color:rgb(146,208,80);
+    color:white;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    width:10%;
+    padding:4px;
+    display:inline-block;
+}
+
+.customDataTable thead th
+{
+	background-color: #eee;
+    color: grey;
+    padding-left: 8px !important;
+    border-top: 1px solid #ccc !important;
+	border-left: 1px solid #ccc !important;
+	border-right:0 !important;
+	border-bottom:0 !important;
+    font-size: 14px;
+	font-weight: normal !important;
+	text-align: left;
+	padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-right: 2px !important;
+	height: 42px;
+}
+
+.customDataTable thead th:last-child
+{
+	border-right: 1px solid #ccc !important;
+}
+
+.customDataTable tbody td:last-child
+{
+	border-right: 1px solid #ccc !important;
+}
+
+.submit-control
+{
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    display: inline;
+    background-color: rgb(146, 208, 80);
+    font-weight: bold;
+    padding: 4px;
+    margin-right:5px;
+}
+
+.edit-control
+{
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    display: inline;
+    background-color: rgb(240, 173, 78);
+    font-weight: bold;
+    padding: 4px;
+    margin-right:5px;
+}
+
+.delete-control
+{
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    display: inline;
+    background-color: rgb(217, 83, 79);
+    font-weight: bold;
+    padding: 4px;
+    margin-right:5px;
+}
+
+table.dataTable.no-footer {
+    border-bottom: none !important;
+}
+.even
+{
+    background-color:rgb(242,242,242) !important;
+}
+
+.desc-input-style
+{
+    border:none;
+    height:100%;
+    vertical-align:middle;
+}
+
+.desc-icon-style
+{
+    float: right;
+    height: 100%;
+    vertical-align: middle;
+    padding: 8px;
+    cursor:pointer;
+}
+
+.dialog-text-area
+{
+    width:98%;
+    height:100px;
+    margin:4px;
+}
+
+.request-title
+{
+    font-size: 15px;
+    display: inline-block;
+    color: #1799b9;
+}
+.dash-bar
+{
+    display: inline-block;
+    height: 2px;
+    background-color: #1799b9;
+    width: 80%;
+    margin-top: 0px;
+    vertical-align: middle;
+}
+.product-table {
+    margin: 10px 30px;
+}
+.prod-table
+{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 82px;
+    font-size: 15px;
+    height:44px;
+    line-height: 44px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    border-radius:13px;
+    padding: 0 10px;
+}
+.prod-table span,.prod-table input
+{
+    margin-right:10px;
+    font-size: 13px;
+}
+.prod-table .fa
+{
+    font-size: 21px;
+}
+
+.fa-check-square-o
+{
+    color:#6990cb
+}
+
+.details-extended
+{
+    width:auto
+}
+
+.prod-table label
+{
+    font-weight: normal;
+    margin-bottom:0px;
+}
+.bill-legend
+{
+    margin: 0px 20px;
+    width:auto;
+    border:0px solid white;
+    padding: 0px 5px;
+}
+.blue-label
+{
+    font-weight: 700;
+    font-size: 15px;
+}
+.blue-label span{
+    color: #1799b9;
+}
+
+.adv-search-title
+{
+    padding-right: 20px;
+}
+fieldset.table-parent
+{
+    padding:5px 0px 20px 0px;
+}
+.adv-search-show
+{
+    padding: 0px 75px;
+}
+.adv-search-show .dash-bar
+{
+    width:80%;
+}
+.adv-search-show .request-title,.view-res-show .request-title
+{
+    width:auto;
+}
+.search-details .search-title{
+    height:36px;
+    line-height: 36px;
+    padding:0px 30px;
+}
+.search-details .search-main
+{
+    margin-top:11px;
+    padding: 15px 10px 15px 10px;
+}
+
+.search-details .btn-container
+{
+    margin:0px 4px;
+}
+
+.datamine-reserve
+{
+    background-color: rgb(242,242,242);
+	color:#000000;
+}
+.search-details .caret{
+    color: rgb(0,157,217);
+    margin-top: 10px;
+}
+.reser-details .details-table
+{
+    margin-left:0px;
+    margin-top:10px;
+}
+
+.reser-details .table-parent
+{
+    border:1px solid white;
+}
+.reser-details .table-parent
+{
+    margin: 9px 10px;
+}
+#autoSearchTable ,#propSearchTable{
+margin: 0 auto;
+clear: both;
+width: 100%;
+table-layout: fixed;
+}
+.dataTables_empty
+{
+	width:100%;
+}
+.widget-inner
+{
+    padding-top:7px;
+}
+
+.empty-row
+{
+	font-size: 15px;
+    color: rgb(140,142,143);
+    line-height: 32px;
+}
+.other-table-parent
+{
+    border:0px solid #FFFFFF;
+    margin: 0px 0px;
+}
+.lable-title span.tool
+{
+    color: #1d3c41;
+}
+
+.billing-title
+{
+    margin: 0px 17px;
+}
+.save-btn-style,.reset-btn-style
+{
+    padding:0px;
+}
+
+.dataTables_length
+{
+	padding-top: 0.300em;
+}
+
+.dataTables_length label
+{
+	display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: normal;
+    margin-left: 12px;
+}
+
+.customDataTable tbody tr:last-child td {
+    border-bottom: 1px solid #ccc !important;
+}
+
+.customDataTable img
+{
+	height: 20px;
+}
+
+#reservationTable thead th
+{
+	height:30px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button 
+{
+	padding:0px !important;
+	margin-left:5px !important;
+	margin-right:5px !important;
+}
+
+.dataTables_wrapper .dataTables_info {
+    padding-top: 0.400em !important;
+}
+
+.dropdown-toggle
+{
+	width: 100%;
+    padding: 0;
+    padding-left: 12px;
+    border-radius: 3%;
+    text-align: left;
+	height: 22px;
+}
+
+.btn-group
+{
+	width: 91%;
+}
+
+.btn .caret {
+    margin-left: 0;
+    float: right;
+    vertical-align: middle;
+    margin-top: 8px;
+    margin-right: 6px;
+}
+
+.btn-default:hover, .btn-default:focus,.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background-color: white !important; 
+	height: 22px;	
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus
+{
+	background-color:white;
+	color:black;
+}
+
+.save-btn-style:focus, .reset-btn-style:focus
+{
+    box-shadow: none;
+    border: none;
+}
+
+.multiselect-selected-text
+{
+	display: inline-block;
+}
+
+.ui-widget-overlay {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	background-color:#666666;
+	opacity: .5;
+    filter: Alpha(Opacity=50);
+}
+
+.ui-front {
+    z-index: 100;
+}
+
+.noclose .ui-dialog-titlebar-close
+{
+    display:none;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 0px;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+    max-height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+	max-width:100%;
+	overflow: hidden;
+}
+
+.ui-dialog-title
+{
+    color:#3db2e1;
+	padding:4px;
+}
+
+.ui-dialog-buttonset
+{
+	text-align:right;
+}
+
+.ui-dialog-titlebar
+{
+	background-color:rgb(91,155,213);
+	color:white;
+	font-family: inherit;
+	padding-left: .5em !important;
+}
+.ui-dialog-title
+{
+	color:white;
+}
+.ui-widget-content
+{
+	font-size:13px;
+	font-family: inherit;
+}
+.save-btn-style
+{
+    color:white;
+    margin:10px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: rgb(113,178,201);
+    color: white;
+    font-weight:bold;
+    width:100px !important;
+    height:30px !important;
+    font-size:15px;
+	margin-right: 0px;
+}
+
+.submit-btn-style
+{
+    background-color:rgb(146,208,80);
+    color:white;
+    margin:10px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: white;
+    font-weight:bold;
+    width:100px !important;
+    height:30px !important;
+    font-size:15px;
+}
+
+.reset-btn-style
+{
+    background-color:rgb(255,199,44);
+    color:white;
+    margin:10px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: white;
+    font-weight:bold;
+    width:100px !important;
+    height:30px !important;
+    font-size:15px;
+}
+.datamine-export
+{
+    background-color: rgb(0,176,80);
+	margin-right: 0px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover
+{
+	background:rgb(113,178,201) !important;
+	border:1px solid rgb(113,178,201) !important;
+}
+
+.highlight
+{
+	background-color:rgb(230,232,232) !important;
+}
+
+footer .nav-links ul {
+    padding-left: 40px;
+}
+.email-title
+{
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	color: #1799b9;
+	padding-left: 14px;
+}

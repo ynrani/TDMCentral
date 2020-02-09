@@ -1,0 +1,240 @@
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+ <jsp:include page="headerNew.jsp"></jsp:include>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATS Data Central - Home</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="images/favicon.ico" >
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.6-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/font_awesome/css/font-awesome.css" >
+	 <link rel="stylesheet" href="css/common.css" >
+    <link rel="stylesheet" href="css/landing.css" >
+     <link rel="stylesheet" href="css/landing_menu.css" >
+    <link rel="stylesheet" type="text/css" href="css/stickyfooter.css">
+	<link type="text/css" rel="stylesheet"
+	href="css/jquery.faloading.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="lib/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.faloading-0.2.min.js"></script>
+    <script src="js/landing.js"></script>
+    
+</head>
+<body>
+	<div class="loaderDiv" style='display: none;'></div>
+    <header class="main-header">
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="logo" title="Home">
+                    <a href="javascript:void(0)"></a>
+                </div>
+            </div>
+            <div class="col-xs-10">
+                <nav class="ats-main-nav">
+                    <ul class="pull-right">
+                       <li><span> <%
+                       if (session.getAttribute("UserName") != null
+						&& session.getAttribute("LAST_LOGIN")!=null) {
+					out.println("Welcome "+ session.getAttribute("UserName") + "  Last login  "+session.getAttribute("LAST_LOGIN"));
+					
+				} else if (session.getAttribute("UserName") != null
+						&& session.getAttribute("LAST_LOGIN")== null) {
+					out.println("Welcome "+ session.getAttribute ("UserName"));
+					}
+				     %>
+						</span></li>
+                        <li>
+                            <a href="javascript:void(0)">ATS Data Support</a>
+                        </li>
+                        <li>
+                             <a href="./logout?logout=true" id="logout" class ="fa fa-sign-out">Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="ats-sub-nav">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="page-menu">
+                                <div class="col-xs-11">
+                                    <nav class="other-nav land-nav">
+
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active landing1">
+                                <div class="carousel-caption">
+                                    <h1>Welcome to ATS Data Central, one stop shop for your test data needs</h1>                                    
+                                </div>
+                                <a href="javascript:void(0)" class="item-learn">Learn More</a>
+                            </div>
+                            <div class="item landing2">
+                                <div class="carousel-caption">
+                                    <h1><ul>
+                                    	<p>Now you will be able to</p>
+                                    		<li>Request creation of new PAS data</li>
+                                    		<li>Search and reserve PAS data for your testing needs</li>
+                                    	</ul>
+                                    </h1>
+                                    
+                                </div>
+                               <!--  <a href="javascript:void(0)" class="item-learn">Learn More</a> -->
+                            </div>
+                            <div class="item landing3">
+                                <div class="carousel-caption">
+                                    <h1>Stay tuned for more exciting updates here</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="options-background">
+                        <div class="row">
+                        	<div class="col-xs-4">
+                                <div class="service-option text-center">
+                                    <div class="service-mask"></div>
+                                    <a href="./dataMinningAutoPolicySearch" class="service-content tile-link">
+                                        <i class="fa fa-database ser-pic"></i>
+                                        <p class="title">Data Mining</p>
+                                        <p class="desc">Find the right data yourself</p>
+                                        <!-- <a href="javascript:void(0)" class="more pull-right">
+                                        </a> -->
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div id="dataGenTile" class="service-option text-center">
+                                    <div class="service-mask"></div>
+                                    <a id="dataGenLink" href="./requestData" class="service-content tile-link">
+                                        <i class="fa fa-wrench ser-pic"></i>
+                                        <p class="title">Data Generation</p>
+                                        <p class="desc">Request for data creation</p>
+                                        <!--<a href="javascript:void(0)" class="more pull-right">
+
+                                        </a>-->
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="service-option text-center">
+                                    <div class="service-mask"></div>
+                                    <a class="service-content  tile-link">
+                                        <i class="fa fa-pie-chart ser-pic"></i>
+                                        <p class="title">Data Subset</p>
+                                        <p class="desc">Get large quantity of secure data from production</p>
+                                        <!--  <a href="javascript:void(0)" class="more pull-right">
+
+                                        </a>-->
+                                    </a>
+                                </div>
+                            </div>                   
+                        </div>
+                        <div class="row">
+                        	<div class="col-xs-4">
+                                <div class="service-option text-center">
+                                    <div class="service-mask"></div>
+                                    <a class="service-content tile-link">
+                                        <i class="fa fa-refresh ser-pic"></i>
+                                        <p class="title">Data Refresh/Copy</p>
+                                        <p class="desc">Restore your data to right test version</p>
+                                        <!--  <a href="javascript:void(0)" class="more pull-right">
+                                        </a>-->
+                                    </a>
+                                </div>
+                            </div>
+                        	<div class="col-xs-4">
+                                <div class="service-option text-center">
+                                    <div class="service-mask"></div>
+                                    <a class="service-content  tile-link">
+                                        <i class="fa fa-lock ser-pic"></i>
+                                        <p class="title">Data Masking</p>
+                                        <p class="desc">Desensitize production data</p>
+                                        <!-- <a href="javascript:void(0)" class="more pull-right">
+                                        </a> -->
+                                    </a>
+                                </div>
+                            </div>                             
+                            <div class="col-xs-4">
+                                <div class="service-option text-center">
+                                    <div class="service-mask"></div>
+                                    <a class="service-content tile-link">
+                                        <i class="fa fa-eye ser-pic"></i>
+                                        <p class="title">Sensitivity  Profiling</p>
+                                        <p class="desc">Understand the sensitive elements in your application</p>
+                                        <!-- <a href="javascript:void(0)" class="more pull-right">
+                                        </a> -->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer home-footer land-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="nav-links">
+                        <div class="copyright">&copy;2016 CSAA Insurance Group.</div>
+                        <ul>
+                            <li>
+                                <a href="./governance#gettingStarted">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./contactus">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Site Map</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="js/search-common.js"></script>
+<script type="text/javascript" src="js/stickyfooter.js"></script>
+</html>
+
+

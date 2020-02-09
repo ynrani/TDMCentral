@@ -1,0 +1,111 @@
+body{
+    background:white !important;
+}
+.main-style {
+    margin-top: 10px;
+    min-height:670px;
+}
+.login-page
+{
+    padding-top:20px;
+    color: #686868;
+}
+.login-page h1{
+    margin-bottom:50px;
+    color: #1799b9;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+.login-page .form-group
+{
+    font-size:16px;
+}
+.login-page .form-group label{
+    font-weight: normal;
+}
+.login-page .fg-pass
+{
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    margin-left: 1px;
+    padding: 50px 15px;
+}
+.login-page .fg-pass p{
+    font-weight: normal;
+}
+.ats-other-nav
+{
+    border-bottom: 1px solid #F2F2F2;
+}
+.fg-pass a{
+    margin-right:10px;
+    color: #1799b9;
+}
+.new-user
+{
+    color: #1799b9;
+    text-align: center;
+}
+.reg-btn-container
+{
+    text-align: center;
+}
+/*Ashwini 9th March*/
+footer
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: transparent;
+}
+footer,footer ul a
+{
+    color: #0096d6 !important;
+}
+footer .copyright
+{
+    color:rgb(118, 118, 118);
+    margin: 10px 53px
+}
+.login-box
+{
+    padding: 50px 15px;
+    border: 1px solid #e5e5e5;
+}
+.ats-container-fluid
+{
+    padding-left: 0px;
+    padding-right: 60px;
+}
+.login-image
+{
+    background-image: url("../images/login-bg1.png");
+    height: 889px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-page form{
+    margin-top:100px;
+}
+.com-submit-btn
+{
+    margin-top:10px
+}
+.login-page .logo{
+    height: 77px;
+    width: 70px;
+    display: inline-block;
+    background-image: url("../images/landing/logo.PNG");
+    background-size: cover;
+}
+.reg-content label{
+    font-weight: normal;
+    margin-top: 9px;
+    text-align: right;
+}
+.reg-btn-container button {
+    margin: 0 10px;
+    font-weight: normal;
+}

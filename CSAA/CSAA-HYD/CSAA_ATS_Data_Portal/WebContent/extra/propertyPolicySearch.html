@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+  <!-- saved from url=(0014)about:internet -->
+ <html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATS Data Central | Auto Policy Search</title>
+	  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="images/favicon.ico" >	
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.6-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesNew.css">
+    <link rel="stylesheet" type="text/css" href="css/datamining.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-multiselect.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.datatables.min.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.datatables.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font_awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/select.datatables.min.css">
+
+	  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  <script type="text/javascript" src="js/jquery.datatable.min.js"></script>
+	  <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+
+
+  </head>
+  <body>
+  <div class="content-section datamine-content-section">
+		<div class="collpasewidget active" id="generalDetails">
+			<div class="widget-inner">
+				<div id="generalDetailsContent" class="widget-content">
+					<div class="table-parent">
+						<table class="details-table">
+							<tbody>
+							<tr>
+								<td class="lable-title blue-label" width="25%" align="left" valign="middle">
+									<span data-toggle="tooltip" title="" data-original-title="Environment from where data is needed" class="grey-tooltip">
+										Environment
+									</span>
+								</td>
+								<td class="flied-title" width="25%" align="left" valign="middle">
+									<select id="envir" name="envir" class="down-control">
+									</select>
+								</td>
+								<td class="lable-title" width="25%" align="left" valign="middle"></td>
+								<td class="flied-title" width="25%" align="left" valign="middle">
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+				<div class="widget-title">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12">
+								<i class="fa fa-minus-square-o plus-minus-style" title="Expand/Collpase Details"></i>
+								<span class="request-title">Basic Search</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="basicSearch" class="widget-content">
+					<div class="table-parent">
+						<div id="otherDetails" class="other-details">
+							<div class="table-parent other-table-parent">
+								<table class="details-table">
+									<tbody>
+									<tr>
+										<td class="lable-title" width="25%" align="left" valign="middle">
+											<span class="tool" data-toggle="tooltip" title="AAA_CSA-CA Select,AAA_SS-Signature Series">
+												Product Type
+											</span>
+										</td>
+										<td class="flied-title" width="25%" align="left" valign="middle">
+											<select id="prodType" name="prodType" class="down-control">
+											</select>
+										</td>
+										<td class="lable-title" width="25%" align="left" valign="middle">
+											<span class="tool" data-toggle="tooltip" title="Current status of the policy">Policy Status</span>
+										</td>
+										<td class="flied-title" width="25%" align="left" valign="middle">
+											<select id="polStatus" name="polStatus" class="down-control">
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td class="lable-title" width="25%" align="left" valign="middle" ><span class="tool" data-toggle="tooltip" title="State where policy is written">Risk State</span></td>
+										<td class="flied-title" width="25%" align="left" valign="middle">
+											<select id="riskState" name="riskState" class="down-control">
+											</select>
+										</td>
+										<td class="lable-title" width="25%" align="left" valign="middle"><span class="tool" data-toggle="tooltip" title="Policy Type">Policy Type</span></td>
+										<td class="flied-title" width="25%" align="left" valign="middle">
+											<select id="polTyp" name="polTyp" class="down-control">
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td class="lable-title" width="25%" align="left" valign="middle"><span class="tool" data-toggle="tooltip" title="Policy Coverage">Policy Coverage</span></td>
+										<td class="flied-title" width="25%" align="left" valign="middle">
+											<select id="proPolLevelCoverage" multiple="multiple">
+												<option value="Any" selected>Any</option>
+												<option value="Coverage1">Coverage1</option>
+												<option value="Coverage2">Coverage2</option>
+												<option value="Coverage3">Coverage3</option>
+												<option value="Coverage4">Coverage4</option>
+												<option value="Coverage5">Coverage5</option>
+												<option value="Coverage6">Coverage6</option>
+											</select>
+										</td>
+
+										<td class="lable-title" width="25%" align="left" valign="middle"><span class="tool" data-toggle="tooltip" title="Total Disablility">Total Disablility</span></td>
+										<td class="flied-title" width="25%" align="left" valign="middle">
+											<div class="radio data-mine-radio">
+												<label>
+													<input type="radio" id="totDisaYes" name="totDisa" value="Yes" />Yes
+												</label>
+												<label>
+													<input type="radio" id="totDisaNo" name="totDisa" value="No" />No
+												</label>
+												<label>
+													<input type="radio" id="totDisaAny" name="totDisa" value="Any" checked="checked"/>Any
+												</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="lable-title" width="25%" align="left" valign="middle"><span class="tool" data-toggle="tooltip" title="Automobile Death Benefits">Automobile Death Benefits</span></td>
+										<td class="flied-title" width="25%" align="left" valign="middle">
+											<div class="radio data-mine-radio">
+												<label>
+													<input type="radio" id="propDeathYes" name="propDeath" value="Yes" />Yes
+												</label>
+												<label>
+													<input type="radio" id="propDeathNo" name="propDeath" value="No" />No
+												</label>
+												<label>
+													<input type="radio" id="propDeathAny" name="propDeath" value="Any" checked="checked"/>Any
+												</label>
+											</div>
+										</td>
+
+									</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+						<div id="billing" class="other-details">
+							<div class="table-parent other-table-parent">
+								<div class="widget-title">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-xs-12 billing-title">
+												<i class="fa fa-minus-square-o plus-minus-style" title="Expand/Collpase Details"></i>
+												<span class="request-title">Billing</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<table class="details-table widget-content">
+									<tbody>
+										<tr>
+											<td class="lable-title" width="25%" align="left" valign="middle"><span class="tool" data-toggle="tooltip" title="Payment plan is the lumpsum or equally distributed payment towards insurance premium amount">Payment Plan</span></td>
+											<td class="flied-title" width="25%" align="left" valign="middle">
+												<select id="payPlan" name="payPlan" class="down-control">
+												</select>
+											</td>
+											<td class="lable-title" width="25%" align="left" valign="middle"></td>
+											<td class="flied-title" width="25%" align="left" valign="middle">
+											</td>
+										</tr>
+										<tr>
+											<td class="lable-title" width="25%" align="left" valign="middle">
+												<span class="tool" data-toggle="tooltip" title="Total Due">
+													Total Due
+												</span>
+											</td>
+											<td class="flied-title" width="25%" align="left" valign="middle">
+												<div class="radio data-mine-radio">
+													<label>
+														<input type="radio" id="payOffYes" name="propPayOff" value="Yes" />Yes
+													</label>
+													<label>
+														<input type="radio" id="payOffNo" name="propPayOff" value="No" />No
+													</label>
+													<label>
+														<input type="radio" id="payOffAny" name="propPayOff" value="Any" checked="checked"/>Any
+													</label>
+												</div>
+											</td>
+											<td class="lable-title" width="25%" align="left" valign="middle"></td>
+											<td class="flied-title" width="25%" align="left" valign="middle">
+											</td>
+										</tr>
+										<tr>
+											<td class="lable-title" width="25%" align="left" valign="middle">
+												Do you want a policy with autopay eligibility?
+											</td>
+											<td class="flied-title" width="25%" align="left" valign="middle">
+												<div class="radio data-mine-radio">
+													<label>
+														<input type="radio" id="autoPayYes" name="propPay" value="Yes" />Yes
+													</label>
+													<label>
+														<input type="radio" id="autoPayNo" name="propPay" value="No" />No
+													</label>
+													<label>
+														<input type="radio" id="autoPayAny" name="propPay" value="Any" checked="checked"/>Any
+													</label>
+												</div>
+											</td>
+											<td class="lable-title" width="25%" align="left" valign="middle"></td>
+											<td class="flied-title" width="25%" align="left" valign="middle">
+											</td>
+										</tr>
+										<tr>
+											<td class="lable-title" width="25%" align="left" valign="middle">
+												<span class="tool" data-toggle="tooltip" title="Minimum Due">
+													Minimum Due
+												</span>
+											</td>
+											<td class="flied-title" width="25%" align="left" valign="middle">
+												<div class="radio data-mine-radio">
+													<label>
+														<input type="radio" id="currBalYes" name="propCurrBal" value="Yes" />Yes
+													</label>
+													<label>
+														<input type="radio" id="currBalNo" name="propCurrBal" value="No" />No
+													</label>
+													<label>
+														<input type="radio" id="currBalAny" name="propCurrBal" value="Any" checked="checked"/>Any
+													</label>
+												</div>
+											</td>
+											<td class="lable-title" width="25%" align="left" valign="middle"></td>
+											<td class="flied-title" width="25%" align="left" valign="middle">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+		<div class="btn-container">
+			<button type="button" id="btnSearchResultProp" class="leftButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-state-hover save-btn-style" title="Search">
+				<i class="fa fa-search csaa-vectors"></i>Search
+			</button>
+			<button type="button" id="btnRsetResultProp" class="leftButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-state-hover reset-btn-style" title="Reset">
+				<i class="fa fa-arrow-circle-o-left csaa-vectors"></i>Reset
+			</button>
+		</div>
+		<div id="searchresultsprop" class="other-details search-details" style="display:none">
+			<div class="table-parent other-table-parent collpasewidget">
+				<div class="widget-title">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12">
+								<i class="fa fa-minus-square-o plus-minus-style" title="Expand/Collpase Details"></i>
+								<span class="request-title">Search Results</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="table-parent search-main widget-content">
+					<table id="propSearchTable" class="customDataTable" cellspacing="0" width="100%">
+						<thead>
+						<tr>
+							<th></th>
+							<th>Reserve*</th>
+							<th>Policy <br />Number</th>
+							<th>Product <br />Type</th>
+							<th>Policy <br />Stage</th>
+							<th>Risk <br />State</th>
+							<th>Policy <br />Term</th>
+							<th>Effective <br />Date</th>
+							<th>Expiration <br />Date</th>
+							<th>Risk Level <br />Converage</th>
+							<th>Available <br />Payments</th>
+							<th>Available <br />Documents</th>
+							<th>Document <br />Type</th>
+						</tr>
+						</thead>
+					</table>
+					<div class="result-btn-container">
+						<button type="button" id="btnSave" class="leftButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-state-hover save-btn-style datamine-reserve" title="Save">Reserve</button>
+						<button type="button" id="btnClose" class="leftButton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-state-hover reset-btn-style datamine-export" title="Export">Export</button>
+					</div>
+
+				</div>
+				<div class="widget-title res-widget-title">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12">
+								<i class="fa fa-minus-square-o plus-minus-style" title="Expand/Collpase Details"></i>
+								<span class="request-title">View Reservation</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="reservTable" class="table-parent reser-details widget-content">
+					<div class="table-parent">
+						<p>Record found. Reservation details for the current policy search criteria</p>
+						<table id="reservationTable" class="customDataTable" cellspacing="0" width="100%">
+						  <thead>
+						  <tr>
+							  <th>#</th>
+							  <th>User Id</th>
+							  <th>Number of Reserved Records</th>
+							  <th>Email User</th>
+						  </tr>
+						  </thead>
+					  </table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+  <script type="text/javascript" src="js/search-common.js"></script>
+  	<script type="text/javascript" src="js/autopolicy.js"></script>
+	<script type="text/javascript" src="js/proppolicy.js"></script>
+  </body>
+</html>

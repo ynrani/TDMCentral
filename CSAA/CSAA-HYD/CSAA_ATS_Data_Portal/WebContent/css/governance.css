@@ -1,0 +1,321 @@
+html{
+	position: relative;
+}
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+	background: #fff !important;
+}
+.gov-parent
+{
+	position:relative;
+	min-height:500px;
+}
+.gov-banner
+{
+	background-image:url("../images/governance/governance_banner.jpg");
+	height: 500px;
+	background-size: cover;
+	position: fixed;
+    width: 100%;
+}
+.gov-banner .header-title{
+	font-size: 3em;
+	color: #fff;
+	padding-left: 160px;
+	margin-top: 15%;
+}
+.bottom-space
+{
+	height:50px;
+	background-color: rgba(0,0,0,0.4);
+	position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.gov-tabs{
+	background: #005B7B;
+	color:#fff;
+	font-size: 18px;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	display:block;
+	text-align: center;
+	cursor: pointer;
+}
+.gov-tabs:hover,.gov-tabs:focus{
+	text-decoration: none;
+	color:#fff;
+	background:#71b2c9;
+	outline: none;
+}
+.gov-tabs-parent .col-xs-3:first-child .gov-tabs{
+	border-left:0px solid #fff;
+}
+.gov-tabs-parent .col-xs-3:last-child .gov-tabs{
+	border-right:0px solid #fff;
+}
+.gov-tabs span{
+	padding:25px 10px;
+	display:inline-block;
+}
+.gov-tabs-parent .col-xs-3{
+	padding-right: 0px;
+    padding-left: 0px;
+}
+.gov-tabs .fa{
+	font-size: 25px;
+	vertical-align: middle;
+}
+.gov-main
+{
+	padding: 8px 0px;
+	padding-bottom:50px;	
+}
+.gov-main h2{
+	text-align: center;
+	color: #1799b9;
+	font-size: 38px;
+}
+.gov-main p{
+	color: #333;
+	font-size: 17px;
+	padding:10px 20px;
+}
+.img-detail-box
+{
+	height: auto;
+    margin: 20px auto;
+    text-align: center;
+}
+.gov-image
+{
+	max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.gov-body
+{
+	position: relative;
+    background-color: #fff;
+}
+.gov-sub-header
+{
+	font-size: 16px;
+    font-weight: 300;
+}
+.started-summary
+{
+	font-style: italic;
+}
+.gov-learn-more
+{
+	font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin:15px 20px;
+    display: inline-block;
+    background-color: #ff5800;
+    color: #fff;
+    border: 2px solid #ff5800;
+}
+.gov-learn-more:hover
+{
+	text-decoration: none;
+	color: #fff;
+	background-color: #a54405;
+}
+.data-sevices-bg
+{
+	background-image: url("../images/governance/data_service_skyline.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0px; 
+	padding-bottom:0px;
+}
+.data-sevices-bg  h2{
+	text-align: center;
+	font-size: 38px;	
+	color:#fff;
+}
+.gov-service{
+	display: block;
+	font-size:16px;
+	text-align: center;
+	margin:25px 0px;
+	color: #fff;
+}
+.gov-service:hover,.gov-service:focus
+{
+	color:#fff;
+	text-decoration: none;
+	outline: none;
+}
+.gov-service .fa
+{
+	font-size: 60px;
+}
+.gov-service .data-ser-text{
+	font-size: 17px;
+	font-weight: 500;
+	margin:20px 0px;
+}
+.gov-service .data-ser-text .fa{
+	font-size: 23px;
+	margin-right:5px;
+}
+.gov-service .data-ser-text span
+{
+	display: inline-block;
+    vertical-align: top;
+}
+.gov-service a{
+	color:#fff;
+	transition: all .5s ease;
+	padding:12px 18px;
+	border:2px solid #fff;
+}
+.gov-service a:hover
+{
+	background-color: #fff;
+	color:#000;
+	text-decoration: none;
+}
+.gov-ser-icons
+{
+	color:#fff;
+	margin-top: 25px;
+}
+.odd-data-service,.even-data-service{
+	padding:50px 160px;
+}
+.odd-data-service
+{
+	color:#000;
+	background-color:white;
+}
+.even-data-service
+{
+	color:#fff;
+	background-color: #71b2c9;
+}
+.odd-data-service .data-ser-heading{
+	font-size: 32px;
+	margin-bottom: 20px;
+	text-align:left;
+	color:black;
+}
+.even-data-service .data-ser-heading{
+	font-size: 32px;
+	margin-bottom: 20px;
+	text-align:left;
+}
+.odd-data-service .data-ser-summary,.even-data-service .data-ser-summary{
+	font-size: 17px;
+}
+.odd-data-service .data-ser-img,.even-data-service .data-ser-img{
+	width: 461px;
+    height: 260px;
+}
+.odd-data-service .sharepoint,.even-data-service .sharepoint
+{
+	background-color: #ff5800;
+    color: #fff;
+    border: 2px solid #ff5800;
+}
+.odd-data-service .sharepoint:hover,.even-data-service .sharepoint:hover{
+	background-color: #a54405;
+}
+.odd-data-service .show-flow
+{
+	background-color: #fff;
+    color: #0098C5;
+    border: 2px solid #0098C5;
+}
+.even-data-service .show-flow
+{
+	background-color: transparent;
+	color: #fff;
+    border: 2px solid #fff;
+}
+.odd-data-service .show-flow:hover,.even-data-service .show-flow:hover{
+	text-decoration: none;
+	background-color: #3a698a;
+    color: #fff;
+}
+.odd-data-service .service-links a,.even-data-service .service-links a{
+	display: inline-block;
+	margin: 10px 15px 10px 0px;
+	font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    transition: all 0.1s ease;
+}
+.even-data-service .service-links a
+{
+	margin: 10px 15px 10px 0px;
+}
+.odd-data-service .service-links a:hover,.even-data-service .service-links a:hover
+{
+	text-decoration: none;
+}
+.odd-data-service .data-text,.even-data-service .data-img{
+	float:left;
+}
+.odd-data-service .data-img,.even-data-service .data-text{
+	float:right;
+}
+
+#back-to-top
+{
+	display:none;
+	position: fixed;
+    bottom: 0;
+    right:0;
+    font-size: 60px;
+    color: #ccc;
+}
+.other-section
+{
+	display:none;
+}
+.sev-cat-img-box
+{
+	background: #ccc;
+    padding: 70px 0px;
+}
+.odd-img-parent
+{
+	float:right;
+	margin-top: 15px;
+}
+.even-img-parent
+{
+	float:left;
+	margin-top: 15px;
+}
+.odd-img-style
+{
+	color: #0096d6;
+    font-size: 235px !important;
+}
+.even-img-style
+{
+	color: white;
+    font-size: 235px !important;
+}
+.train-img
+{	
+    width: 23%;
+}
+.getting-started-img
+{
+	max-width: 75%;
+}
+.ats-data-scope{
+	max-width:96%;
+}
+.test-data-bullets ul{
+	padding-left: 25px;
+}

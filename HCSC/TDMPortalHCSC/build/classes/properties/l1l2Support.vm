@@ -1,0 +1,19 @@
+<html> 
+ 	<body> 
+ 		Hi Team, 
+ 		<p> 
+ 			Test Data for the below Search Criteria requested by ${autoEmailDTO.userId} is unavailable. 
+ 		</p>
+ 		
+ 		Search Criteria: 
+ 		<p>
+ 		${autoEmailDTO.msg}
+ 		
+ 		</p>
+ 		<p> 
+			Please look into this request. 
+ 		</p> 
+ 		
+ 		<p>Thanks !!!</p> 
+ 	</body> 
+</html> 

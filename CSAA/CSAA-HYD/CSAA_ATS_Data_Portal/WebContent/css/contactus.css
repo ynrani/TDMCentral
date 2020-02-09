@@ -1,0 +1,23 @@
+body{
+	background:#fff !important;
+}
+.contact-us
+{
+	text-align: center;
+    color: #1799b9;
+    font-size: 38px;
+    margin-top: 150px;
+}
+.contact-info{
+	color: #333;
+    font-size: 17px;
+    padding: 10px 20px;
+    text-align:center;
+}
+
+address
+{
+	color: #333;
+    font-size: 17px;
+    padding: 10px 20px;
+}
